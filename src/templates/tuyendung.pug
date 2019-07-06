@@ -1,0 +1,85 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	section.breadcumb
+		.container
+			ul
+				li
+					a(href="") Trang chủ
+				li
+					a(href="") Tuyển dụng
+	section.tuyendung
+		.container
+			img.img-fluid(src="./img/tuyendung-banner.png", alt="")
+			h2 Tuyển dụng
+		.container
+			.box-td
+				.row
+					.col-4
+						img.img-fluid(src="./img/tuyendung1.png", alt="")
+					.col-8.tt
+						.row
+							h5 Nhân Viên Marketing
+						.row
+							.col-6
+								p Phòng tuyển dụng
+								p Ngày bắt đầu: 12/1/2010
+							.col-6
+								p TP.HCM
+								p Ngày bắt đầu: 12/1/2010
+
+			.box-td
+				.row
+					.col-4
+						img.img-fluid(src="./img/tuyendung1.png", alt="")
+					.col-8.tt
+						.row
+							h5 Nhân Viên Marketing
+						.row
+							.col-6
+								p Phòng tuyển dụng
+								p Ngày bắt đầu: 12/1/2010
+							.col-6
+								p TPHCM
+								p Ngày bắt đầu: 12/1/2010
+			.box-td
+				.row
+					.col-4
+						img.img-fluid(src="./img/tuyendung1.png", alt="")
+					.col-8.tt
+						.row
+							h5 Nhân Viên Marketing
+						.row
+							.col-6
+								p Phòng tuyển dụng
+								p Ngày bắt đầu: 12/1/2010
+							.col-6
+								p TPHCM
+								p Ngày bắt đầu: 12/1/2010
+			.box-td
+				.row
+					.col-4
+						img.img-fluid(src="./img/tuyendung1.png", alt="")
+					.col-8.tt
+						.row
+							h5 Nhân Viên Marketing
+						.row.tt
+							.col-6
+								p Phòng tuyển dụng
+								p Ngày bắt đầu: 12/1/2010
+							.col-6
+								p TPHCM
+								p Ngày bắt đầu: 12/1/2010
+	section.site-pagination
+		.container.text-center
+			a.active(href="") 1
+			a(href="") 2
+			a(href="") 3
+			span ..

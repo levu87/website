@@ -1,0 +1,96 @@
+header
+	background: #ffff
+	padding: .5rem
+	img
+		width: 112px
+	.box-search
+		position: relative
+		width: 300px
+		display: inline-block
+		margin-left: 15px
+		input[type="text"]
+			width: 250px
+			height: 40px
+			border-radius: 50px 0px 0px 50px 
+			border: 2px solid black
+			color: black
+			padding: 10px
+		.btn-search
+			width: 50px
+			height: 40px
+			position: absolute
+			border-radius: 0px 50px 50px 0px
+			background: black
+			outline: none
+			color: #ffff
+			right: 2px
+			top: 0px
+			cursor: pointer
+			border: 2px black solid
+			i
+                position: absolute
+                top: 11px
+                right: 15px
+	.top-list
+		display: table
+		margin: auto
+		a
+			display: table-cell
+			text-align: center
+			text-transform: uppercase
+			font-size: 11px
+			color: black
+			img
+				display: block
+				margin: 0 auto 0
+				width: 40px
+				height: 30px
+@media (max-width: 1200px)
+	header
+		.box-search
+			width: 200px
+			input[type="text"]
+				width: 150px
+@media (max-width: 1024px)
+	header
+		.box-search
+			float: right
+@media (max-width: 992px)
+	.top-list
+		padding: 2rem 0
+.box1
+	padding: 0
+	position: relative
+	&:after
+		content: ""
+		display: block
+		width: 100%
+		height: 2px
+		background: rgb(235, 235, 235)
+		position: absolute
+		top: 0
+	&:before
+		content: ""
+		display: block
+		width: 100%
+		height: 2px
+		background: #ed7d31
+		position: absolute
+		bottom: 0
+	.menu
+		padding: 0
+		li,.f2
+			display: inline-block
+			padding: 1rem 2rem
+			a
+				text-transform: uppercase
+				font-size: 11px
+				color: black
+		.f1
+			background: #ed7d31
+			i
+				font-size: 20px
+				margin-right: 5px
+		.f3
+			background: #ed7d31
+			padding: 1rem 1rem

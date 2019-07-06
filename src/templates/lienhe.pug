@@ -1,0 +1,58 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	section.breadcumb
+		.container
+			ul
+				li
+					a(href="") Trang chủ
+				li
+					a(href="") Liên hệ
+	section.lienhe
+		.container
+			img.img-fluid(src="./img/lienhe-banner.png", alt="lienhe")
+			h2.text-center Liên hệ
+			.row
+				.col-lg-5.col-ms-12.p-0.cc
+					img.img-fluid(src="./img/lienhe-img.png", alt="")
+					.btext-lh
+						img(src="./img/logo-big.png", alt="")
+						h3 Công ty Trách Nhiệm Hữu Hạn Điện máy Trường Tín
+						li
+							a(href="")
+								i.fa.fa-location-arrow
+								|Địa chỉ: 879/66 Hương Lộ 2, P. Bình Trị Đông A,Q. Bình Tân, Tp. HCM
+						li
+							a(href="")
+								i.fa.fa-phone
+								|Điện thoại: 08.6913.4525
+						li
+							a(href="")
+								i.fa.fa-envelope
+								|Email: dienmaytruongtin.com@gmail.com
+				.col-lg-7.col-ms-12.p-0.cl
+					.form-contact
+						h3 THÔNG TIN LIÊN HỆ CỦA BẠN
+						p Gửi thông tin liên hệ để 
+							span Bingtools.vn 
+							|có thể giúp đỡ bạn một cách tốt nhất
+						form(action="")
+							label(for="") Họ và tên
+							input(type="text")
+							label(for="") Email*
+							input(type="text")
+							label(for="") Tiêu Để 
+							input(type="text")
+							label(for="") Nội Dung
+							textarea 
+							button Gửi
+								i.fa.fa-long-arrow-right
+
+

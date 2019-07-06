@@ -1,0 +1,213 @@
+*
+	pad: 0
+	margin: 0
+html
+	font-family: 'Myriad Pro', sans-serif
+	background-color: #f5f5f5
+	text-rendering: optimizeLegibility
+body
+	overflow-x: hidden
+	background-color: #f5f5f5
+////breadcumb
+.breadcumb
+	ul
+		list-style: none
+		padding: 10px
+		font-size: 15px
+		position: relative
+		border-bottom: 2px solid rgb(235, 235, 235)
+		li
+			display: inline
+			&:before
+				content: ">"
+				padding: 10px
+			a
+				color: black
+//box
+.box
+	.box-if
+		position: relative
+		img
+			width: 100%
+		.text-b
+			position: absolute
+			top: 80px
+			left: 30px
+			p
+				max-width: 500px
+				color: white
+				font-size: 14px
+			h2
+				text-transform: uppercase
+				color: white
+				font-size: 20px
+			button
+				display: none
+				border: 1px solid white
+				outline: none
+				margin-top: 1rem
+				color: white
+				font-size: 11px
+				padding: .5rem 2rem
+				border-radius: 20px
+				background: none
+				i 
+					margin-left: 5px
+	.box-sm
+		margin-top: 1rem
+		position: relative
+		img
+			width: 100%
+		.text-b
+			position: absolute
+			left: 35%
+			top: 35%
+			transform: translate(-50% -50%)
+			p
+				max-width: 500px
+				color: white
+				font-size: 14px
+			h2
+				text-transform: uppercase
+				color: white
+				font-size: 20px
+			button
+				display: none
+				border: 1px solid white
+				outline: none
+				margin-top: 1rem
+				color: white
+				font-size: 11px
+				padding: .5rem 2rem
+				border-radius: 20px
+				background: none
+				i 
+					margin-left: 5px
+	.box-mt
+		margin-top: 1rem
+		position: relative
+		img
+			width: 100%
+		.text-b
+			position: absolute
+			top: 50px
+			left: 30px
+			p
+				max-width: 500px
+				color: white
+				font-size: 14px
+			h2
+				text-transform: uppercase
+				color: white
+				font-size: 20px
+			button
+				border: 1px solid white
+				outline: none
+				margin-top: 1rem
+				color: white
+				font-size: 11px
+				padding: .5rem 2rem
+				border-radius: 20px
+				background: none
+				i 
+					margin-left: 5px
+@media (max-width: 1024px)
+	.box-sm
+		.text-b
+			margin-top: -3rem
+			margin-right: 5rem
+@media (max-width: 992px)
+	.box-if
+		.text-b
+			margin-top: -3rem
+@media (max-width: 768px)
+	.box-if,.box-sm,.box-mt
+		.text-b
+			p 
+				display: none
+			button
+				display: block!important
+
+//thương hiệu
+.thuonghieu
+	margin-top: 2rem
+	position: relative
+	.th
+		background: white
+		padding: 2rem 1rem 
+		h2
+			text-transform: uppercase
+			font-size: 20px
+			position: relative
+			&:before
+				content: ""
+				display: block
+				position: absolute
+				width: 100%
+				height: 2px
+				background: #a7a7a7
+				bottom: -10px
+		p
+			margin-top: 20px
+		.brand-slider
+			padding: 2rem 0
+			.owl-carousel
+				.item 
+					margin-top: 2rem
+					img
+						margin: 1rem
+				// Phần Control
+				.owl-nav
+					position: absolute
+					top: -125px
+					right: 0
+					.owl-next
+						border: 1px solid #ed7d31
+						border-radius: 50px
+						color: #ed7d31
+						background: none
+					button 
+						i 
+							display: block
+							width: 2rem
+							height: 2rem
+							+lh(2rem)
+@media (max-width: 768px)
+	.owl-nav
+		top: -147px !important
+@media (max-width: 480px)
+	.owl-nav
+		display: none
+.chungnhan
+	margin-top: 50px
+	.box-ch
+		position: relative
+		padding: 2rem 1rem
+		h2
+			text-transform: uppercase
+			font-size: 20px		
+		.brand-slider
+			.owl-carousel
+					.item 
+						margin-top: 2rem
+						img
+							margin: 1rem
+					// Phần Control
+					.owl-nav
+						position: absolute
+						top: -45px
+						right: 0
+						.owl-next
+							border: 1px solid #ed7d31
+							border-radius: 50px
+							color: #ed7d31
+							background: none
+						button 
+							i 
+								display: block
+								width: 2rem
+								height: 2rem
+								+lh(2rem)
+@media (max-width: 768px)
+	.owl-nav
+		top: -60px !important

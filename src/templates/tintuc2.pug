@@ -1,0 +1,89 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	section.breadcumb
+		.container
+			ul
+				li
+					a(href="") Trang chủ
+				li
+					a(href="") Tin tức
+	section.wrapper
+		.container
+			.row
+				.col-lg-6.col-md-12.tintuc_b1
+					img.img-fluid(src="./img/tintuc_2.png", alt="")
+					.tintuc_text
+						date 12/12/12
+						h2 Máy Vặn Bu Lông Chạy Điện DEWALT DW293-B1
+						p Máy khoan động lực Dewalt DWD024K - dụng cụ hoàn hảo cho gia đình bạn Việc sửa chữa, bảo dưỡng hoặc trang trí nhà cửa hàng ngày sẽ làm cho ngôi nhà...
+				.col-lg-6.col-md-12.side_tintuc
+					.row
+						.col-lg-6.col-md-6.box-img
+							img.img-fluid(src="./img/tintuc_3.png", alt="")
+						.col-lg-6.col-md-6.textt
+							date 20/10/2010
+							h4 Máy Vặn Bu Lông Chạy Điện DEWALT DW293-B1
+							p Máy khoan động lực Dewalt DWD024K- dụng cụ hoàn hảo cho gia đình bạn Việc sửa chữa, bảo dưỡng hoặc trang trí nhà cửa hàng ngày sẽ làm cho ngôi nhà...
+					.row.cut-cu
+						.col-lg-6.col-md-6.box-img
+							img.img-fluid(src="./img/tintuc_3.png", alt="")
+						.col-lg-6.col-md-6.textt
+							date 10/10/2010
+							h4 Máy Vặn Bu Lông Chạy Điện DEWALT DW293-B1
+							p Máy khoan động lực Dewalt DWD024K-dụng cụ hoàn hảo cho gia đình bạn Việc sửa chữa, bảo dưỡng hoặc trang trí nhà cửa hàng ngày sẽ làm cho ngôi nhà...
+	section.wrapper2
+		.container
+			.row
+				.col-lg-4.col-md-6
+					figure
+						img.img-fluid(src="./img/tintuc_1.png", alt="")
+					figcaption
+						date 12/12/12
+						h4 Tư vấn chọn máy cưa đĩa cầm tay
+				.col-lg-4.col-md-6
+					figure
+						img.img-fluid(src="./img/tintuc_1.png", alt="")
+					figcaption
+						date 12/12/12
+						h4 Tư vấn chọn máy cưa đĩa cầm tay
+				.col-lg-4.col-md-6
+					figure
+						img.img-fluid(src="./img/tintuc_1.png", alt="")
+					figcaption
+						date 12/12/12
+						h4 Tư vấn chọn máy cưa đĩa cầm tay
+				.col-lg-4.col-md-6
+					figure
+						img.img-fluid(src="./img/tintuc_1.png", alt="")
+					figcaption
+						date 12/12/12
+						h4 Tư vấn chọn máy cưa đĩa cầm tay
+				.col-lg-4.col-md-6
+					figure
+						img.img-fluid(src="./img/tintuc_1.png", alt="")
+					figcaption
+						date 12/12/12
+						h4 Tư vấn chọn máy cưa đĩa cầm tay
+				.col-lg-4.col-md-6
+					figure
+						img.img-fluid(src="./img/tintuc_1.png", alt="")
+					figcaption
+						a(href="")
+						date 12/12/12
+						i.fas.fa-clock
+						h4 Tư vấn chọn máy cưa đĩa cầm tay
+	section.site-pagination
+		.container.text-center
+			a.active(href="") 1
+			a(href="") 2
+			a(href="") 3
+			span ..
+

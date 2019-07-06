@@ -1,0 +1,67 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.breadcumb
+		.container
+			ul
+				li
+					a(href="") Trang chủ
+				li
+					a(href="") Tin tức
+	section
+		.container
+			.row
+				.col-lg-8.col-sm-12
+					img.banner.img-fluid(src="./img/tintuc-banner.png", alt="")
+					.noidung
+						time 29/12/2010
+						h2 Hướng Dẫn Sử Dụng Máy Khoan Cầm Tay Đơn Giản
+						p Một chiếc máy khoan cầm tay với cơ chế hoạt động đơn giản nhưng không phải ai cũng biết sử dụng chúng. MRO hướng dẫn và lưu ý một số điều khi thực hiện các hoạt động khoan lắp, vặn vít giúp người dùng thực hiện tốt công việc của mình.
+						p Việc đầu tiên để sử dụng máy khoan, bạn cần nắm được cấu tạo và cơ chế hoạt động cơ bản của máy khoan để lựa chọn chiếc máy khoan phù hợp với công việc sử dụng. Một máy khoan cầm tay thông thường bao gồm:
+					img.banner.img-fluid(src="./img/tintuc1.png", alt="")
+					p Máy khoan có tay cầm nắm với các thông số kỹ thuật rõ ràng.
+					p Thân máy khoan bao gồm các: công tắc tắt/ mở, nút gạt lựa chọn chức năng khoan, nút gạt đảo chiều vòng xoay, nút khóa để tắt mở tự động và giữ cho chế độ chạy của máy tự động.Đầu kẹp mũi khoanĐầu xoay điều khiển tốc độ khoan
+					p Các bước thực hiện khi sử dụng máy khoan như sau:
+					p Bước 1: Kiểm tra, thử máy khoan
+					p Bước 3: Chọn loại mũi bắt vít, mũi khoan phù hợp, lắp mũi khoan vào đầu máy khoan và cố định
+					p Bước 4: Lựa chọn tốc độ, chế độ khoan phù hợp với bề mặt thi công
+					p Bước 5: Khi khoan lưu ý nên nắm chắc  máy khoan, đưa mũi máy vào đúng vị trí theo hướng vuông góc 90 độ với bề mặt thi công
+					p Bước 6: Nhấn nhẹ mũi khoan xoay hoặc đưa mũi vít vào sâu trong bề mặt thi côngCác bước thực hiện tuy đơn giản nhưng cần lưu ý điều khiển để máy khoan thực hiện tốt công việc của mình.
+					p *Điều chỉnh tốc độ
+					p Người sử dụng có thể dễ dàng điều chỉnh tốc độ và tần suất vòng xoay phù hợp với yêu cầu công việc thông qua công tắc tắt/mở;+ Lực áp nhẹ lên công tắc tắt/mở tạo ra tốc độ thấp, tần suất chậm.+ Lực áp mạnh lên công tắc tắt/mở làm tăng tốc độ và tần suất vòng xoay.
+					p * Điều chỉnh chế độ khoan
+					p Nút gạt lựa chọn chức năng khoan trên máy khoan có 2 chế độ khoan được đánh số:
+					p + Số 1 là chế độ khoan thường và bắt vít ( lưu ý một số máy khoan cần thêm đầu nối khớp với mũi bắt vít)
+					p + Số 2 là chế độ khoan đập
+					img.banner.img-fluid(src="./img/tintuc2.png", alt="")
+					p *Điều chỉnh đảo chiều vòng xoay
+					p Máy khoan cầm tay đa số có thể vừa sử dụng chức năng khoan vừa có thể sử dụng chức năng vặn vít mạnh mẽ qua chức năng đảo chiều. Khi đang khoan hay bắt vít vào, chỉ cần nhấn nút gạt đảo chiều vòng xoay để nới hay tháo vít.
+					p Một chiếc máy khoan cầm tay và biết cách sử dụng chúng sẽ giúp bạn tiết kiệm khá nhiều thời gian và công sức cho các công việc lắp đặt, sữa chữa.
+					p Vì vậy, nếu đang cần một chiếc máy khoan cầm tay phù hợp sử dụng với công việc của mình. Các bạn có thể tham khảo tại: – nhà cung cấp các sản phẩm máy cầm tay chính hãng, giá tốt.
+				.col-lg-4.col-sm-12
+					.box-tintuc
+						figure
+							img(src="./img/tintuc-side1.png", alt="")
+							figcaption
+								time 29/12/2010
+								h4 Máy Vặn Bu Lông Chạy Điện DEWALT DW293-B1
+						figure
+							img(src="./img/tintuc-side1.png", alt="")
+							figcaption
+								time 29/12/2010
+								h4 Máy Vặn Bu Lông Chạy Điện DEWALT DW293-B1
+						figure
+							img(src="./img/tintuc-side1.png", alt="")
+							figcaption
+								time 29/12/2010
+								h4 Máy Vặn Bu Lông Chạy Điện DEWALT DW293-B1
+
+		

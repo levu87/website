@@ -1,0 +1,92 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.breadcumb
+		.container
+			ul
+				li
+					a(href="") Trang chủ
+				li
+					a(href="") Về chúng tôi
+	section.box
+		.container
+			.box-if
+				img.img-fluid(src="./img/box-img1.png", alt="")
+				.text-b
+					h2 Về chúng tôi
+					p Bigtools là hệ thống bán lẻ các thiết bị điện cầm tay, điện dân dụng, dụng cụ đồ nghề và các giải pháp cho ngành nông nghiệp Việt Nam. Với sự đa dạng về thương hiệu và chủng loại với hơn 3000 sản phẩm cùng với các thương hiệu hàng đầu trong ngành như: Total, DCA, Ingco, Makita, Bosch, Maxpro, Ken…. Chúng tôi cam kết mang lại những sản phẩm chất lượng cũng như đem đến trải nghiệm mua sắm thoải mái và tiện lợi đến các khách hàng trên cả nước
+					button xem
+						i.fa.fa-long-arrow-right
+			.box-sm
+				img(src="./img/box-img2.png", alt="")
+				.text-b
+					h2 tầm nhìn sứ mệnh
+					p Luôn luôn tâm niệm rằng Uy tín là kim chỉ nam, là sợi dây gắn kết công ty với khách hàng và người tiêu dùng. Bigtools hướng tới những sản phẩm giúp cho người dùng tiết kiệm được thời gian, chi phí, sức lao động và thân thiện với môi trường. Kèm theo đó là dịch vụ chất lượng và nhanh chóng có khả năng đáp ứng những nhu cầu dù là nhỏ nhất của khách hàng.
+					button xem
+						i.fa.fa-long-arrow-right
+			.box-mt
+				img(src="./img/box-img3.png", alt="")
+				.text-b
+					h2 Môi trường làm việc
+					p Con người chính là tài sản quý nhất của mỗi doanh nghiệp, là nền tảng cơ bản để doanh nghiệp xây dựng, phát triển những chính sách chăm sóc, đãi ngộ cho nhân viên, tạo cơ hội giúp nhân viên phát triển một cách toàn diện, an tâm cống hiến cho doanh nghiệp. Bởi vì, sẽ không có một nhân viên nào muốn làm việc cho một công ty có tiếng là cư xử không tốt với nhân viên, đánh giá thấp nguồn lực của chính mình.
+					button Tuyển dụng
+						i.fa.fa-long-arrow-right
+	section.thuonghieu
+		.container
+			.th.bg-white
+				h2 Thương hiệu
+				p Bigtools tự hào là đối tác cũng như là đại lý được ủy quyền chính thức của các thương hiệu hàng đầu
+				.brand-slider
+					.owl-carousel.owl-theme
+							.item
+								img(src="./img/brand-8.png", alt="")
+							.item
+								img(src="./img/brand-8.png", alt="")
+							.item
+								img(src="./img/brand-8.png", alt="")
+							.item
+								img(src="./img/brand-8.png", alt="")
+
+							.item
+								img(src="./img/brand-8.png", alt="")
+							.item
+								img(src="./img/brand-8.png", alt="")
+							.item
+								img(src="./img/brand-8.png", alt="")
+	section.chungnhan.bg-white
+		.container
+			.box-ch
+				h2 Chứng nhận chất lượng
+				.brand-slider
+					.owl-carousel.owl-theme
+						.item
+							img(src="./img/cn_1.png", alt="")
+							
+						.item
+							img(src="./img/cn_1.png", alt="")
+							
+						.item
+							img(src="./img/cn_1.png", alt="")
+						
+						.item
+							img(src="./img/cn_1.png", alt="")
+							
+						.item
+							img(src="./img/cn_1.png", alt="")
+							
+						.item
+							img(src="./img/cn_1.png", alt="")
+							
+						.item
+							img(src="./img/cn_1.png", alt="")
+							
+
+
